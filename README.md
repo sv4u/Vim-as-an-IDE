@@ -338,3 +338,6 @@ Here is a table of command and useful commands.
 | Move cursor to the beginning of the file | `gg` |
 | Move cursor to the end of the file | `G` |
 
+## Example vimrc file
+
+We've added an example `vimrc` file for your viewing. You can find it [here](.vimrc)
