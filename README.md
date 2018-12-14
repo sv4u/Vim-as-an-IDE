@@ -342,4 +342,4 @@ Here is a table of command and useful commands.
 
 ## Example Vimrc
 
-We’ve added an example vimrc file for you to look at [here](.vimrc).
+We’ve added an example vimrc file for you to look at [here](https://github.com/sv4u/Vim-as-an-IDE/blob/master/.vimrc).
