@@ -34,7 +34,7 @@ Vim is a text editor found in the terminal. If you’re used to using Notepad, S
 This guide is for anyone interested in learning how to use Vim! However, parts of this guide are specifically geared towards students at Carnegie Mellon University taking 15-122, Principles of Imperative Programming. The overarching goal is for the reader to learn something about using Vim, whether they just started or have been using Vim for a long time.
 
 ### A Brief History of Vim
-Vim was created by Bram Moolenaar as a text editor for the Amiga System.  was first publicly released in 1991  The name "Vim" stands for "Vi iMproved"  because Vim is an extended version of the vi editor, with many additional features designed to be helpful in editing program source code. Over the years Vim has become the most popular text editor for programmers, as well as one of the most popular integrated development environment (IDE) for developers.
+Vim was created by Bram Moolenaar as a text editor for the Amiga System. It was first publicly released in 1991. The name "Vim" stands for "Vi iMproved"  because Vim is an extended version of the original vi editor, with many additional features designed to be helpful in editing program source code. Over the years Vim has become the most popular text editor for programmers, as well as one of the most popular integrated development environment (IDE) for developers.
 
 ### Why Should I Use Vim?
 
@@ -61,7 +61,7 @@ In Vim, there are four major modes you will need to be familiar with. The most i
 
 **Normal Mode**
 
-Normal mode is the default mode for Vim. you can access text commands for editing your file. Whenever you open up vim, you will automatically be in Normal mode. Here's what an empty file opened in Normal mode looks like:
+Normal mode is the default mode for Vim. You can access text commands for editing your file. Whenever you open up vim, you will automatically be in Normal mode. Here's what an empty file opened in Normal mode looks like:
 
 ![Normal mode](images/normal-mode.png)
 
@@ -79,15 +79,16 @@ For Visual mode, you can enter it from Normal mode by typing in `v`. This will h
 
 **Visual Block Mode**
 
-Visual Block mode is similar to Visual mode in the fact that it highlights text. However, instead of highlighting character by character, Visual Block mode highlights line by line. To enter it, type in `V` from Normal mde. Here's what Visual Block mode looks like from an empty file:
+Visual Block mode is similar to Visual mode in the fact that it highlights text. However, instead of highlighting character by character, Visual Block mode highlights line by line. To enter it, type in `V` from Normal mode. Here's what Visual Block mode looks like from an empty file:
 
 ![Visual Block mode](images/visual-block-mode.png)
 
 ### Verbs and Modifiers
 
-Vim is like a language. There are verbs which allows you do to certain actions. Here is a table of the most important verbs and what they do:
+Vim is like a language. There are verbs which allow you do to certain actions. Here is a table of the most important verbs and what they do:
 
 | Verb | Action |
+| ---- | ------ |
 | `v`  | Enter Visual mode |
 | `c`  | Change whatever is being modified |
 | `d`  | Delete whatever is being modified |
@@ -96,6 +97,7 @@ Vim is like a language. There are verbs which allows you do to certain actions. 
 Notice how the verbs need something to modify. So, in the Vim language, we have verbs ***and*** modifiers. Here's the important modifiers:
 
 | Keystroke | Modifier |
+| --------- | -------- |
 | `i`       | Inside   |
 | `a`       | Around   |
 | `w`       | Word     |
@@ -117,7 +119,7 @@ By using modifiers and verbs together, we're able to do complex actions in Vim.
 
 ### Searching
 
-Searching in Vim is fairly straightforward. Type / followed by the term you want to search in the Normal mode. Vim will search for all occurrences of the term in the file. For instance if you wanted to search for all occurrences of "Hello" in a file, you would simply type  n l mode and press enter:
+Searching in Vim is fairly straightforward. Type / followed by the term you want to search in the Normal mode. Vim will search for all occurrences of the term in the file. For instance if you wanted to search for all occurrences of "Hello" in a file, you would simply  type the following in Normal mode and press enter:
 
 ```vim
 /Hello
@@ -125,7 +127,7 @@ Searching in Vim is fairly straightforward. Type / followed by the term you want
 
 You can then use the following commands to navigate the search items:
 -   Press `n` to search forwards for the next occurrence.
--   Press `N` to search backwards for the previous occurrence.
+-   Press  `N` to search backwards for the previous occurrence.
 -   Type `gnn` to jump to the first match.
 -   Type `GNN` to jump to the last match.
 
@@ -136,9 +138,9 @@ If you are currently in insert or append mode, press ESC to enter Normal mode. T
 To simply save a file without exiting, enter Normal mode, type `:w` and press enter. To exit the file without saving changes, enter Normal mode, type `:q!` and press enter.
 
 ### Make and Running Code
-Vim allows you to run shell commands without closing the editor. To run a shell command in Vim you type `:!` followed by the shell command in NormalCommand mode. This allows you to run and test your code without exiting Vim.
+Vim allows you to run shell commands without closing the editor. To run a shell command in Vim you type `:!` followed by the shell command in Normal mode. This allows you to run and test your code without exiting Vim.
 
-If you have a Makefile then Vim can run it for you. Typing `:make` in Normal command mode will run the Makefile. In addition, using `:make` to compile a program allows you to use the command `:copen` to open a window with a list of all the compilation errors. To close that window, simply type `:cclose` in Normal command mode.
+If you have a Makefile then Vim can run it for you. Typing `:make` in Normal mode will run the Makefile. In addition, using `:make` to compile a program allows you to use the command `:copen` to open a window with a list of all the compilation errors. To close that window, simply type `:cclose` in Normal mode.
 
 ## Creating the Vimrc File
 
@@ -340,4 +342,4 @@ Here is a table of command and useful commands.
 
 ## Example Vimrc
 
-We've added an example `vimrc` file for you to look at [here](.vimrc).
+We’ve added an example vimrc file for you to look at [here](.vimrc).
